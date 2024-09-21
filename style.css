@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:linear-gradient(#eeaeca,#b58ca9)
+}
+
+.container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.form-title h1{
+    font-size: 40px;
+    color:#7b497a ;
+    font-weight: 600;
+}
+
+.form-title hr{
+    width: 50%;
+    height: 5px;
+    border: none;
+    background-color: #7b497a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.contact-input{
+    height: 50px;
+    width: 400px;
+    border: none;
+    outline: none;
+    color: #666;
+    padding-left: 25px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.left-container textarea{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.contact-input:focus{
+    border: 2px solid #f4a297;
+}
+
+.contact-input::placeholder{
+    color: #d3cdcd;
+}
+
+.left-container button{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(#f4a297, #f3627f);
+}
+
+.left-container button img{
+    height: 14px;
+}
+
+.right-container img{
+    width: 500px;
+}
+
+@media (max-width:800px) {
+    .contact-input{
+        width: 80dvw;
+    }
+    .right-container img{
+        display: none;
+    }
+
+    
+    
+}
